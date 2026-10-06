@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — EconoPompe</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:850px;margin:0 auto;padding:32px 20px;line-height:1.6;color:#171717;background:#fff}
+h1{line-height:1.2} h2{margin-top:2em} table{border-collapse:collapse;width:100%;margin:16px 0} th,td{border:1px solid #ddd;padding:10px;text-align:left;vertical-align:top} th{background:#f5f5f5}
+.note{background:#f5f5f5;padding:14px 16px;border-radius:10px} a{color:inherit}
+</style>
+</head>
+<body>
+<h1>Politique de confidentialité — EconoPompe</h1>
+<p><em>Dernière mise à jour : 6 octobre 2026</em></p>
+<p>EconoPompe est une application Android qui aide à trouver où faire le plein au meilleur coût autour de soi, à partir des prix officiels des carburants.</p>
+<p><strong>Éditeur :</strong> Chaffoke — <strong>contact :</strong> <a href="mailto:chaffoke.dev@gmail.com">chaffoke.dev@gmail.com</a></p>
+
+<h2>En bref</h2>
+<ul><li>Pas de compte, pas de publicité, pas de statistiques d'utilisation, pas de revente de données.</li><li>La position sert uniquement aux fonctionnalités de l'application.</li><li>Les favoris et réglages restent sur le téléphone.</li></ul>
+
+<h2>Données utilisées</h2>
+<h3>Position</h3>
+<p>L'application demande l'accès à la position (précise ou approximative, au choix) pour calculer les stations situées dans le rayon choisi, leur distance et centrer la carte.</p>
+<p>La position est d'abord utilisée sur le téléphone. L'application ne stocke pas cette position sur un serveur de l'éditeur et ne la partage pas à des fins publicitaires. Pour certaines fonctionnalités, une information de localisation volontairement réduite est transmise à des services tiers afin de fournir le service demandé.</p>
+<table><thead><tr><th>Service</th><th>Ce qu'il reçoit</th><th>Pourquoi</th></tr></thead><tbody>
+<tr><td>OpenStreetMap Overpass (overpass-api.de et instances de secours)</td><td>Position arrondie à environ 1 km et rayon</td><td>Récupérer le nom et l'enseigne des stations</td></tr>
+<tr><td>Serveurs de tuiles OpenStreetMap (tile.openstreetmap.org)</td><td>Tuiles de la zone affichée</td><td>Afficher le fond de carte</td></tr>
+<tr><td>IGN Géoplateforme — géocodage (data.geopf.fr)</td><td>Texte saisi comme destination</td><td>Proposer des adresses et lieux</td></tr>
+<tr><td>IGN Géoplateforme — itinéraire (data.geopf.fr), OSRM en secours</td><td>Point de départ arrondi à environ 100 m et destination choisie</td><td>Calculer l'itinéraire et les détours vers les stations</td></tr>
+<tr><td>OpenStreetMap Overpass</td><td>Tracé de l'itinéraire arrondi à environ 1 km</td><td>Noms et enseignes des stations sur le trajet</td></tr>
+</tbody></table>
+<p>Comme pour tout accès à Internet, les services tiers contactés peuvent également recevoir l'adresse IP du téléphone selon leur propre fonctionnement et leur propre politique de confidentialité.</p>
+<p>Le téléchargement des prix depuis le flux officiel du ministère de l'Économie ne transmet aucune position : le fichier national est téléchargé en entier puis filtré sur le téléphone.</p>
+
+<h2>Données enregistrées sur le téléphone</h2>
+<ul>
+<li>stations favorites (identifiant, nom, enseigne) ;</li>
+<li>carburant, rayon et filtres choisis ;</li>
+<li>profil véhicule (nom, carburant, type, réservoir, consommation), autonomie saisie ou transmise par Android Auto, et application de navigation préférée ;</li>
+<li>dernier résultat de recherche (liste des stations, heure, position de la recherche) ;</li>
+<li>dernière destination et destinations récentes ;</li>
+<li>historique des prix des stations consultées et favorites (120 jours au plus) ;</li>
+<li>alertes de prix.</li>
+</ul>
+<p>Pour les alertes et les widgets, une vérification en arrière-plan télécharge le flux national des prix. Elle n'active pas le GPS : elle utilise la dernière position connue et peut envoyer cette position arrondie à environ 1 km à OpenStreetMap Overpass pour les noms des stations. L'application ne demande pas l'accès à la position en arrière-plan.</p>
+<p>Ces données restent dans l'espace privé de l'application. Elles sont supprimées en désinstallant l'application ou en effaçant ses données dans les réglages Android.</p>
+
+<h2>Navigation</h2>
+<p>Le bouton « Itinéraire » ouvre Waze ou Google Maps avec l'adresse de la station. Ces applications appliquent leur propre politique de confidentialité.</p>
+
+<h2>Ce que l'application ne fait pas</h2>
+<ul><li>aucune collecte de données personnelles par l'éditeur ;</li><li>aucun identifiant publicitaire, aucun traceur, aucune analyse d'audience ;</li><li>aucun accès aux contacts, photos, fichiers, micro ou caméra.</li></ul>
+
+<h2>Tes droits</h2>
+<p>Aucune donnée personnelle n'étant collectée par l'éditeur, il n'y a pas de données à consulter, rectifier ou supprimer de notre côté. Pour toute question : <a href="mailto:chaffoke.dev@gmail.com">chaffoke.dev@gmail.com</a>.</p>
+
+<h2>Sources et licences</h2>
+<ul><li>Prix, horaires et services : « Prix des carburants en France – flux instantané », ministère de l'Économie, Licence Ouverte v2.0.</li><li>Noms, enseignes et fond de carte : © contributeurs OpenStreetMap, licence ODbL.</li></ul>
+</body></html>
